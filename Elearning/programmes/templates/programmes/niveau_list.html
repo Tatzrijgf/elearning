@@ -3,7 +3,7 @@
 {% block content %}
 
 {% for niveau in niveaux %}
-<a href="#">{{ niveau.nom}}</a><br>
+<a href="{% url 'programmes:matiereList' slug=niveau.slug %}">{{ niveau.nom }}</a><br>
 
 {% endfor %}
 {% endblock %}
